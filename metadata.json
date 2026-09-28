@@ -1,0 +1,8 @@
+{
+  "name": "Remix SweetOrder",
+  "description": "Manage bakery orders in one view with customer details, photos, and delivery times for efficient processing.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
