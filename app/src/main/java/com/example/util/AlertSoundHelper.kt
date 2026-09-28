@@ -40,11 +40,11 @@ class AlertSoundHelper(private val context: Context) {
                 }
 
                 if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-                    val pattern = longArrayOf(0, 150, 80, 200)
+                    val pattern = longArrayOf(0, 250, 100, 250, 100, 400)
                     vibrator?.vibrate(VibrationEffect.createWaveform(pattern, -1))
                 } else {
                     @Suppress("DEPRECATION")
-                    vibrator?.vibrate(300)
+                    vibrator?.vibrate(500)
                 }
             } catch (e: Exception) {
                 e.printStackTrace()
